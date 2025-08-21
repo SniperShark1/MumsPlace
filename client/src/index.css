@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,6 +33,17 @@
   --mums-light: hsl(0, 0%, 98%);
   --mums-secondary: hsl(220, 25%, 95%);
   --mums-border: hsl(220, 15%, 85%);
+}
+
+/* Professional styling */
+body {
+  font-family: 'Bodoni Moda', serif;
+}
+
+.section-card {
+  border: 1px solid rgba(220, 220, 220, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .dark {
