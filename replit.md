@@ -7,6 +7,7 @@ This is a React-based promotional website for Mum's Space, a women-only communit
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Development approach: Focus on functionality over perfection - website is ready for launch as-is.
 
 ## Recent Changes (August 2025)
 
