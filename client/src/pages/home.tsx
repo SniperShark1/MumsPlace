@@ -17,7 +17,7 @@ import downloadImage from "@assets/Screenshot_37_1755235284470.png";
 import babyIsHereImage from "@assets/Screenshot_38_1755235350831.png";
 import communityMothersImage from "@assets/community-mothers.png";
 import foundersImage from "@assets/Screenshot_33_1755718284955.png";
-import logo2Image from "@assets/logo2_1755761390516.png";
+import whiteLogoImage from "@assets/white background logo_1755761521498.png";
 
 import NewsletterSignup from "@/components/NewsletterSignup";
 
@@ -74,7 +74,7 @@ const Home = () => {
               <HeartBackground />
               <div className="w-64 md:w-80 h-auto mx-auto relative z-10">
                 <img 
-                  src={logo2Image}
+                  src={whiteLogoImage}
                   alt="Mum's Space Logo - Mother and baby in heart shape" 
                   className="w-full h-auto filter drop-shadow-lg"
                 />
