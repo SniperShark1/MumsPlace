@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import logo2Image from "@assets/logo2_1755761390516.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +43,7 @@ const Navigation = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <img 
-              src="/logo.png" 
+              src={logo2Image}
               alt="Mum's Space Logo" 
               className="h-12 w-auto filter drop-shadow-sm"
             />
