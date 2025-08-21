@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,24 +24,11 @@
   --ring: hsl(339, 52%, 25%);
   --radius: 0.5rem;
   
-  /* Professional Mum's Space colors */
-  --mums-pink: #f8f9fa;
-  --mums-dark: hsl(220, 40%, 20%);
-  --mums-accent: hsl(340, 60%, 50%);
-  --mums-light: hsl(0, 0%, 98%);
-  --mums-secondary: hsl(220, 25%, 95%);
-  --mums-border: hsl(220, 15%, 85%);
-}
-
-/* Professional styling */
-body {
-  font-family: 'Bodoni Moda', serif;
-}
-
-.section-card {
-  border: 1px solid rgba(220, 220, 220, 0.3);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  /* Custom Mum's Space colors */
+  --mums-pink: #f6cbcd;
+  --mums-dark: hsl(339, 52%, 25%);
+  --mums-accent: hsl(342, 69%, 66%);
+  --mums-light: hsl(352, 80%, 97%);
 }
 
 .dark {
@@ -75,28 +60,19 @@ body {
   }
 
   body {
-    @apply antialiased text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    @apply font-bodoni antialiased text-foreground;
+    background-color: #f6cbcd;
     min-height: 100vh;
   }
   
-  /* Professional typography */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.025em;
+  /* Apply Bodoni Moda font and justified text to all text elements */
+  h1, h2, h3, h4, h5, h6, p, div, span, li, a, button, label, input, textarea {
+    font-family: 'Bodoni Moda', serif;
   }
   
-  p, div, span, li, a, button, label, input, textarea {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  }
-  
-  /* Professional text alignment */
-  p, .text-content {
-    text-align: left;
-    line-height: 1.6;
+  /* Text justification for all paragraphs and content text */
+  p, .text-content, .text-justify-content {
+    text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
   }
@@ -125,7 +101,7 @@ body {
   }
   
   .bg-mums-pink {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background-color: #f6cbcd;
   }
   
   .bg-mums-accent {
