@@ -24,11 +24,13 @@
   --ring: hsl(339, 52%, 25%);
   --radius: 0.5rem;
   
-  /* Custom Mum's Space colors */
-  --mums-pink: #f6cbcd;
-  --mums-dark: hsl(339, 52%, 25%);
-  --mums-accent: hsl(342, 69%, 66%);
-  --mums-light: hsl(352, 80%, 97%);
+  /* Professional Mum's Space colors */
+  --mums-pink: #f8f9fa;
+  --mums-dark: hsl(220, 40%, 20%);
+  --mums-accent: hsl(340, 60%, 50%);
+  --mums-light: hsl(0, 0%, 98%);
+  --mums-secondary: hsl(220, 25%, 95%);
+  --mums-border: hsl(220, 15%, 85%);
 }
 
 .dark {
@@ -60,19 +62,28 @@
   }
 
   body {
-    @apply font-bodoni antialiased text-foreground;
-    background-color: #f6cbcd;
+    @apply antialiased text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     min-height: 100vh;
   }
   
-  /* Apply Bodoni Moda font and justified text to all text elements */
-  h1, h2, h3, h4, h5, h6, p, div, span, li, a, button, label, input, textarea {
-    font-family: 'Bodoni Moda', serif;
+  /* Professional typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
   }
   
-  /* Text justification for all paragraphs and content text */
-  p, .text-content, .text-justify-content {
-    text-align: justify;
+  p, div, span, li, a, button, label, input, textarea {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  /* Professional text alignment */
+  p, .text-content {
+    text-align: left;
+    line-height: 1.6;
     text-justify: inter-word;
     hyphens: auto;
   }
@@ -101,7 +112,7 @@
   }
   
   .bg-mums-pink {
-    background-color: #f6cbcd;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   }
   
   .bg-mums-accent {

@@ -63,54 +63,145 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-mums-pink">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Navigation />
       
-      {/* Home Section */}
-      <section id="home" className="py-12 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Logo Section with Hearts */}
-          <div className="text-center mb-12">
-            <div className="relative inline-block">
-              <HeartBackground />
-              <div className="w-64 md:w-80 h-auto mx-auto relative z-10">
-                <img 
-                  src="/logo.png" 
-                  alt="Mum's Space Logo - Mother and baby in heart shape" 
-                  className="w-full h-auto filter drop-shadow-lg"
-                />
+      {/* Professional Hero Section */}
+      <section id="home" className="relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 25px 25px, #d946ef 2px, transparent 0)`,
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <div className="lg:pr-8">
+              {/* Company Badge */}
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 border border-purple-200 mb-8">
+                <Crown className="w-4 h-4 text-purple-600 mr-2" />
+                <span className="text-sm font-semibold text-purple-700">Women-Only Community Platform</span>
+              </div>
+              
+              {/* Main Headline */}
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Your Safe Space to 
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"> Connect & Thrive</span>
+              </h1>
+              
+              {/* Subheadline */}
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
+                Join thousands of mothers in secure, private chatrooms designed exclusively for women. Share experiences, get support, and build lasting friendships.
+              </p>
+              
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button 
+                  onClick={() => document.getElementById('app-features')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  data-testid="button-explore-features"
+                  aria-label="Explore Mum's Space app features"
+                >
+                  Explore Features
+                  <CheckCircle className="ml-2 w-5 h-5" />
+                </Button>
+                
+                <Button 
+                  onClick={() => document.getElementById('founders')?.scrollIntoView({ behavior: 'smooth' })}
+                  variant="outline"
+                  className="border-2 border-purple-200 text-purple-700 hover:bg-purple-50 font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300"
+                  data-testid="button-join-founders"
+                >
+                  <Star className="mr-2 w-5 h-5" />
+                  Join Founders Club
+                </Button>
+              </div>
+              
+              {/* Trust Indicators */}
+              <div className="flex items-center space-x-8 text-sm text-gray-500">
+                <div className="flex items-center">
+                  <Lock className="w-4 h-4 mr-2 text-green-500" />
+                  <span>100% Private & Secure</span>
+                </div>
+                <div className="flex items-center">
+                  <Users className="w-4 h-4 mr-2 text-blue-500" />
+                  <span>Women-Only Community</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 mr-2 text-purple-500" />
+                  <span>Verified Members</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Visual */}
+            <div className="relative lg:pl-8">
+              <div className="relative">
+                {/* Main Image Container */}
+                <div className="relative bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+                  <img 
+                    src="/logo.png" 
+                    alt="Mum's Space - Professional community platform for mothers" 
+                    className="w-full h-auto max-w-sm mx-auto"
+                  />
+                  
+                  {/* Floating stats cards */}
+                  <div className="absolute -top-4 -left-4 bg-white rounded-lg shadow-lg p-4 border border-gray-100">
+                    <div className="text-2xl font-bold text-purple-600">{totalDownloads}</div>
+                    <div className="text-sm text-gray-500">Downloads</div>
+                  </div>
+                  
+                  <div className="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4 border border-gray-100">
+                    <div className="text-2xl font-bold text-pink-600">100</div>
+                    <div className="text-sm text-gray-500">Founder Spots</div>
+                  </div>
+                </div>
+                
+                {/* Background decoration */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl opacity-10 -z-10"></div>
               </div>
             </div>
           </div>
-
-          {/* Main Content Card */}
-          <Card className="section-card rounded-3xl p-8 md:p-12 text-center shadow-xl max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-mums-dark">Welcome to Mum's Space</h2>
-            <p className="text-lg md:text-xl mb-8 leading-relaxed">The private support space for mums and women—by mums, for mums. Connect, share, and find your community in a safe, supportive environment.</p>
-            
-            <Button 
-              onClick={() => document.getElementById('app-features')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-mums-accent hover:bg-mums-dark text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              data-testid="button-explore-features"
-              aria-label="Explore Mum's Space app features"
-            >
-              Explore What's Inside
-            </Button>
-            
-            <div className="mt-8 p-4 bg-mums-light bg-opacity-50 rounded-2xl">
-              <p className="text-sm md:text-base text-mums-dark font-medium">
-                <strong>Important:</strong> Mum's Space is a women-only community. By joining, you affirm you are a woman/mum and agree to our community guidelines.
-              </p>
+          
+          {/* Professional Notice */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-6">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <Lock className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Community Guidelines</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Mum's Space is exclusively for women and mothers. By joining our community, you confirm your eligibility and agree to maintain a respectful, supportive environment for all members.
+                  </p>
+                </div>
+              </div>
             </div>
-          </Card>
+          </div>
         </div>
       </section>
 
-      {/* App Features Section - Chatroom Showcase */}
-      <section id="app-features" className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="section-card rounded-3xl p-8 md:p-12 shadow-xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-mums-dark">What We Offer: Real Chatrooms for Every Mum</h2>
+      {/* Professional Features Section */}
+      <section id="app-features" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 border border-purple-200 mb-6">
+              <Users className="w-4 h-4 text-purple-600 mr-2" />
+              <span className="text-sm font-semibold text-purple-700">Community Features</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Everything You Need in One 
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600"> Secure Platform</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Discover specialized chatrooms, expert guidance, and comprehensive tools designed specifically for mothers at every stage of their journey.
+            </p>
+          </div>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Chatroom Screenshot */}
