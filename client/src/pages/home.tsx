@@ -436,78 +436,78 @@ const Home = () => {
       </section>
 
       {/* Founders Section */}
-      <section id="founders" className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="section-card rounded-3xl p-8 md:p-12 shadow-xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section id="founders" className="py-8 sm:py-16">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-8">
+          <Card className="section-card rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl">
+            <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-center">
               {/* Founders Screenshot */}
               <div className="order-2 lg:order-1">
                 <img 
                   src={foundersImage} 
                   alt="Mum's Space Founders Club interface showing Wall of Founders with 100 available spots" 
-                  className="w-full h-auto rounded-2xl shadow-lg border border-mums-accent border-opacity-20"
+                  className="w-full h-auto rounded-xl sm:rounded-2xl shadow-lg border border-mums-accent border-opacity-20"
                 />
               </div>
               
               {/* Founders Description */}
               <div className="order-1 lg:order-2">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
-                    <Crown className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Crown className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-mums-dark">Founders Club</h2>
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-mums-dark leading-tight">Founders Club</h2>
                 </div>
                 
-                <div className="space-y-4 mb-8">
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                     <strong>We're opening just 100 Founder spots</strong>—snag yours for a one-time <strong>$59.99 AUD</strong> and lock in lifetime membership.
                   </p>
                   
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                     As a Founder, you'll be recognised forever, get exclusive access to a private Founders-only chatroom, and never pay again—no subscriptions, no renewals, all future features included.
                   </p>
                   
-                  <div className="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
-                    <p className="text-gray-800 font-medium">
+                  <div className="p-3 sm:p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
+                    <p className="text-sm sm:text-base text-gray-800 font-medium">
                       <strong>⏰ This is a once-only launch offer:</strong> when the 100 are gone, they're gone.
                     </p>
                   </div>
                 </div>
 
                 {/* Founders Benefits */}
-                <div className="space-y-4 mb-8">
-                  <h3 className="text-xl font-semibold text-mums-dark">Founder Benefits:</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <Star className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">Lifetime access to Mum's Space - no future payments ever</p>
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                  <h3 className="text-lg sm:text-xl font-semibold text-mums-dark">Founder Benefits:</h3>
+                  <div className="space-y-2 sm:space-y-3">
+                    <div className="flex items-start space-x-2 sm:space-x-3">
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Lifetime access to Mum's Space - no future payments ever</p>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <Star className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">Gold Founder badge on your profile</p>
+                    <div className="flex items-start space-x-2 sm:space-x-3">
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Gold Founder badge on your profile</p>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <Star className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">Private Founders-only chatroom</p>
+                    <div className="flex items-start space-x-2 sm:space-x-3">
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Private Founders-only chatroom</p>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <Star className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">Direct influence through Founder feedback</p>
+                    <div className="flex items-start space-x-2 sm:space-x-3">
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Direct influence through Founder feedback</p>
                     </div>
-                    <div className="flex items-start space-x-3">
-                      <Star className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700">Early access to all future features</p>
+                    <div className="flex items-start space-x-2 sm:space-x-3">
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Early access to all future features</p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="bg-mums-light bg-opacity-50 rounded-xl p-6">
-                  <p className="text-center text-mums-dark font-medium mb-4">
+                <div className="bg-mums-light bg-opacity-50 rounded-xl p-4 sm:p-6">
+                  <p className="text-center text-mums-dark font-medium mb-3 sm:mb-4 text-sm sm:text-base">
                     Join the exclusive group of mothers who believed in us from day one
                   </p>
                   <Button 
                     onClick={() => document.getElementById('newsletter')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-lg"
+                    className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-4 sm:px-6 rounded-full transition-colors duration-300 shadow-lg text-sm sm:text-base"
                   >
                     Join Newsletter for Founders Access
                   </Button>
@@ -520,9 +520,9 @@ const Home = () => {
 
       {/* eBook Library Section */}
       <section id="library" className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl p-8 md:p-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-20 text-mums-dark">Explore Mums Space</h2>
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-20 text-mums-dark">Explore Mums Space</h2>
             
             {/* Section 1: Stories - Image Right */}
             <div className="grid lg:grid-cols-[440px_1fr] gap-16 items-start mb-20">
